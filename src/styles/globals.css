@@ -16,4 +16,16 @@ body {
   .__btn_outline {
     @apply bg-transparent rounded-full h-10 __c_all text-accent border border-accent font-medium text-lg hover:bg-accent duration-200 hover:text-white;
   }
+  .__h2 {
+    @apply text-[88px]/[96px] font-bold;
+  }
+  .__h5 {
+    @apply text-[32px]/[35px] font-semibold text-[#6a717a];
+  }
+  .__body20 {
+    @apply text-xl/[27px] text-app-black font-light;
+  }
+  .__gradient {
+    @apply bg-gradient-to-b from-[#D5F6FF] to-[#F0FEFF];
+  }
 }

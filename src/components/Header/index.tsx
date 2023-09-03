@@ -5,11 +5,17 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
-import { useClickAway } from "react-use";
+import { useClickAway, useWindowScroll } from "react-use";
 
 const Header = () => {
+  const scroll = useWindowScroll();
   return (
-    <header className="fixed top-0 left-0 w-full">
+    <header
+      className={cxm(
+        "fixed top-0 left-0 w-full duration-300 z-[99]",
+        scroll.y > 0 && "bg-white"
+      )}
+    >
       <div className="max-w-[1340px] mx-auto px-5 py-6">
         <div className="flex items-center justify-between">
           <Link href={"#"}>

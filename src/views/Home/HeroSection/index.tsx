@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="pt-[190px] bg-gradient-to-b from-[#D6F7FF] to-[#F6FFFF]">
+    <section className="pt-[190px] __gradient">
       <div className="max-w-[1240px] px-5 mx-auto">
         <Image
           width={1152}
@@ -12,10 +12,8 @@ const HeroSection = () => {
           src={"/hero_logo.png"}
         />
         <div className="max-w-[768px] mx-auto text-center">
-          <h5 className="text-[32px] font-semibold text-[#6a717a]">
-            Everything you need today and tomorrow
-          </h5>
-          <p className="text-xl/[27px] text-app-black font-light mt-3 mb-5">
+          <h5 className="__h5">Everything you need today and tomorrow</h5>
+          <p className="__body20 mt-3 mb-5">
             A cloud based platform with portal access for all users. The
             scalable, secure and easy to use platform drives productivity,
             reduces errors, streamlines workflow and enhances compliance. Proven
