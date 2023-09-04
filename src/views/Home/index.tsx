@@ -3,6 +3,7 @@ import FeaturesSection from "@/views/Home/FeaturesSection";
 import HeroSection from "@/views/Home/HeroSection";
 import OurSolutionSection from "@/views/Home/OurSolutionSection";
 import PerformanceSection from "@/views/Home/PerformanceSection";
+import TestimonialSection from "@/views/Home/TestimonialSection";
 import TrackRecordSection from "@/views/Home/TrackRecordSection";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <FeaturesSection />
       <TrackRecordSection />
       <OurSolutionSection />
+      <TestimonialSection />
     </>
   );
 };

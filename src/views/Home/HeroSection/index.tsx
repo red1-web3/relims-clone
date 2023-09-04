@@ -3,17 +3,21 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="pt-[190px] __gradient">
-      <div className="max-w-[1240px] px-5 mx-auto">
-        <Image
-          width={1152}
-          height={168}
-          alt="Hero Logo Image"
-          src={"/hero_logo.png"}
-        />
-        <div className="max-w-[768px] mx-auto text-center">
-          <h5 className="__h5">Everything you need today and tomorrow</h5>
-          <p className="__body20 mt-3 mb-5">
+    <section className="pt-[170px] md:pt-[190px] __gradient">
+      <div className="max-w-[1250px] px-[30px] mx-auto">
+        <div className="max-w-[70vw] mx-auto">
+          <Image
+            width={1152}
+            height={168}
+            alt="Hero Logo Image"
+            src={"/hero_logo.png"}
+          />
+        </div>
+        <div className="md:max-w-[768px] mx-auto text-center">
+          <h5 className="__h5 max-lg:mt-3">
+            Everything you need today and tomorrow
+          </h5>
+          <p className="__body20 md:mt-5 mt-3 mb-5">
             A cloud based platform with portal access for all users. The
             scalable, secure and easy to use platform drives productivity,
             reduces errors, streamlines workflow and enhances compliance. Proven

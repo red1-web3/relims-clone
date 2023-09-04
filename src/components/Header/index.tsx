@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";
-import { IoChevronDownOutline } from "react-icons/io5";
+import { IoChevronDownOutline, IoMenuSharp } from "react-icons/io5";
 import { useClickAway, useWindowScroll } from "react-use";
 
 const Header = () => {
@@ -21,7 +21,17 @@ const Header = () => {
           <Link href={"#"}>
             <Image src={"/logo.png"} width={124} height={50} alt="Logo Image" />
           </Link>
-          <nav>
+
+          {/* Mobile --Start-- */}
+          <nav className="lg:hidden">
+            <button className="text-3xl h-10 aspect-square __c_all rounded">
+              <IoMenuSharp />
+            </button>
+          </nav>
+          {/* Mobile --End-- */}
+
+          {/* Desktop --Start-- */}
+          <nav className="max-lg:hidden">
             <ul className="flex items-center gap-x-10">
               {navLinks.map((data, i) => {
                 return <Links {...data} key={i} />;
@@ -33,6 +43,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+          {/* Desktop --End-- */}
         </div>
       </div>
     </header>

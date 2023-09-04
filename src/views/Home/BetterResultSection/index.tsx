@@ -6,13 +6,13 @@ const BetterResultSection = () => {
   const [activeTab, setActiveTab] = useState(2);
 
   return (
-    <section className="mt-10 md:mt-[60px] lg:mt-[120px]">
+    <section className="mt-[100px] lg:mt-[120px]">
       <div className="mx-auto text-center">
         <h2 className="__h2">Better results</h2>
         <p className="__h5 mt-3">From automation to profitability</p>
       </div>
-      <div className="max-w-[768px] mx-auto mt-10">
-        <div className="__c_all gap-x-5">
+      <div className="max-w-[calc(768px+30px)] px-[30px] mx-auto mt-10">
+        <div className="__c_all max-md:flex-col gap-y-5 gap-x-5">
           {betterResult.tabs.map((label, i) => {
             return (
               <div key={i}>
@@ -29,8 +29,8 @@ const BetterResultSection = () => {
             );
           })}
         </div>
-        <div className="text-center mt-14">
-          <h2 className="text-[32px]/[35px] font-semibold">
+        <div className="text-center mt-9 lg:mt-14">
+          <h2 className="text-[20px]/[25px] lg:text-[32px]/[35px] font-semibold">
             {betterResult.fields[activeTab].title}
           </h2>
           <p className="mt-5 __body20">

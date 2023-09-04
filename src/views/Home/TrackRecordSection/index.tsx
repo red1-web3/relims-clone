@@ -20,8 +20,8 @@ const TrackRecordSection = () => {
     setActiveImage(0);
   });
   return (
-    <section className="mt-10 md:mt-[70px] lg:mt-[90px]">
-      <div className="max-w-[1037px] mx-auto text-center">
+    <section className="mt-16 md:mt-[80px] lg:mt-[90px]">
+      <div className="max-w-[calc(1037px+30px)] px-[30px] mx-auto text-center">
         <h2 className="__h2">Proven Track Record</h2>
         <h5 className="__h5 mt-1 max-w-[443px] mx-auto">
           {"Deployed successfully with labs of all sizes"}
@@ -30,8 +30,11 @@ const TrackRecordSection = () => {
           Easy, mobile-optimized, web-based interface accessible from anywhere
         </p>
       </div>
-      <div className="mt-20 max-w-[1095px] mx-auto grid grid-cols-3 gap-x-10">
-        <div className="space-y-10" ref={collapsibleTarget}>
+      <div className="mt-10 md:mt-20 max-w-[calc(1095px+30px)] mx-auto grid gap-y-7 lg:grid-cols-3 gap-x-10 px-[30px]">
+        <div
+          className="space-y-5 md:space-y-10 max-lg:order-2"
+          ref={collapsibleTarget}
+        >
           {trackRecord.collapsible.map((data, i) => (
             <CollapsibleColumn
               key={i}
@@ -42,7 +45,7 @@ const TrackRecordSection = () => {
           ))}
         </div>
 
-        <div className="col-span-2 flex justify-center">
+        <div className="col-span-2 flex justify-center max-lg:order-1">
           <img
             src={trackRecord.tracks[activeImage]}
             alt="Image"
@@ -73,7 +76,9 @@ function CollapsibleColumn({
         onClick={onClick}
         className="flex items-center justify-between cursor-pointer"
       >
-        <h3 className="__body20 font-normal">{title}</h3>
+        <h3 className="__body20 font-normal max-lg:text-center w-full">
+          {title}
+        </h3>
       </div>
       <Collapsible
         trigger=""
@@ -81,7 +86,7 @@ function CollapsibleColumn({
         transitionTime={500}
         transitionCloseTime={500}
       >
-        <p className="p-[30px] rounded-3xl __gradient mt-3.5 __body20 font-normal">
+        <p className="p-5 md:p-[30px] rounded-lg md:rounded-3xl __gradient mt-3.5 __body20 font-normal">
           {description}
         </p>
       </Collapsible>
