@@ -22,15 +22,20 @@ const TrackRecordSection = () => {
   return (
     <section className="mt-16 md:mt-[80px] lg:mt-[90px]">
       <div className="max-w-[calc(1037px+30px)] px-[30px] mx-auto text-center">
-        <h2 className="__h2">Proven Track Record</h2>
-        <h5 className="__h5 mt-1 max-w-[443px] mx-auto">
+        <h2 className="__h2" data-aos="fade-up">
+          Proven Track Record
+        </h2>
+        <h5 className="__h5 mt-1 max-w-[443px] mx-auto" data-aos="fade-up">
           {"Deployed successfully with labs of all sizes"}
         </h5>
-        <p className="mt-4 __body20">
+        <p className="mt-4 __body20" data-aos="fade-up">
           Easy, mobile-optimized, web-based interface accessible from anywhere
         </p>
       </div>
-      <div className="mt-10 md:mt-20 max-w-[calc(1095px+30px)] mx-auto grid gap-y-7 lg:grid-cols-3 gap-x-10 px-[30px]">
+      <div
+        data-aos="fade-up"
+        className="mt-10 md:mt-20 max-w-[calc(1095px+30px)] mx-auto grid gap-y-7 lg:grid-cols-3 gap-x-10 px-[30px]"
+      >
         <div
           className="space-y-5 md:space-y-10 max-lg:order-2"
           ref={collapsibleTarget}

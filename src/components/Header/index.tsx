@@ -14,6 +14,7 @@ const Header = () => {
   return (
     <>
       <header
+        data-aos="fade-down"
         className={cxm(
           "fixed top-0 left-0 w-full duration-300 z-[99] bg-[#D7F7FF]",
           scroll.y > 0 && "bg-white"
@@ -51,7 +52,10 @@ const Header = () => {
                   return <Links {...data} key={i} />;
                 })}
                 <li>
-                  <Link href={"#"} className="__btn px-[35px]">
+                  <Link
+                    href={"https://www.relims.com/request-a-demo"}
+                    className="__btn px-[35px]"
+                  >
                     Request Demo
                   </Link>
                 </li>
@@ -72,7 +76,10 @@ const Header = () => {
             return <Links {...data} key={i} />;
           })}
           <li>
-            <Link href={"#"} className="__btn text-sm px-5 !mt-5 w-fit">
+            <Link
+              href={"https://www.relims.com/request-a-demo"}
+              className="__btn text-sm px-5 !mt-5 w-fit"
+            >
               Request Demo
             </Link>
           </li>

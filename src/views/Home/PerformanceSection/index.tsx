@@ -7,8 +7,11 @@ const PerformanceSection = () => {
   return (
     <section className="mt-10 md:mt-[70px] lg:mt-[90px] __gradient py-10 md:py-[60px]">
       <div className="max-w-[calc(1367px+30px)] px-[30px] mx-auto text-center">
-        <h2 className="__h2"> Everything your lab needs in one place</h2>
-        <p className="__h5 max-w-[852px] mx-auto mt-5">
+        <h2 className="__h2" data-aos="fade-up">
+          {" "}
+          Everything your lab needs in one place
+        </h2>
+        <p className="__h5 max-w-[852px] mx-auto mt-5" data-aos="fade-up">
           Optimized to drive revenue, patient satisfaction and business
           performance
         </p>
@@ -20,7 +23,10 @@ const PerformanceSection = () => {
           src={"/performance_mobile.png"}
           className="mt-5 md:hidden"
         />
-        <div className="max-md:flex justify-center mt-12 md:mt-24">
+        <div
+          className="max-md:flex justify-center mt-12 md:mt-24"
+          data-aos="fade-up"
+        >
           <div className="max-w-[1010px] mx-auto grid grid-cols-2 max-md:gap-x-[14px] lg:gap-y-10 relative">
             {performances.map(({ icon, lists, title }, i) => (
               <div

@@ -14,7 +14,7 @@ export const navLinks: NavLinkProps[] = [
   },
   {
     label: "About Us",
-    url: "#",
+    url: "https://www.relims.com/about-us",
   },
   {
     label: "Solutions",
@@ -22,32 +22,32 @@ export const navLinks: NavLinkProps[] = [
     subLinks: [
       {
         label: "Genetics",
-        url: "#",
+        url: "https://www.relims.com/solutions-genetics",
       },
       {
         label: "Infetious Disease",
-        url: "#",
+        url: "https://www.relims.com/solutions-infectious-disease",
       },
       {
         label: "Toxiology",
-        url: "#",
+        url: "https://www.relims.com/solutions-genetics",
       },
       {
         label: "Blood Chemistry",
-        url: "#",
+        url: "https://www.relims.com/solutions-blood-chemistry",
       },
       {
         label: "Cannabis",
-        url: "#",
+        url: "https://www.relims.com/solutions-cannabis",
       },
     ],
   },
   {
     label: "Features",
-    url: "#",
+    url: "https://www.relims.com/features",
   },
   {
     label: "Contact Us",
-    url: "#",
+    url: "https://www.relims.com/get-in-touch",
   },
 ];

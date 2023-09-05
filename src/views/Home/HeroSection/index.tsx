@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className="pt-[170px] md:pt-[190px] __gradient">
       <div className="max-w-[1250px] px-[30px] mx-auto">
-        <div className="max-w-[70vw] mx-auto">
+        <div className="max-w-[70vw] mx-auto" data-aos="fade-up">
           <Image
             width={1152}
             height={168}
@@ -14,30 +14,46 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:max-w-[768px] mx-auto text-center">
-          <h5 className="__h5 max-lg:mt-3">
+          <h5
+            className="__h5 max-lg:mt-3"
+            data-aos="fade-up"
+            data-aos-delay={50}
+          >
             Everything you need today and tomorrow
           </h5>
-          <p className="__body20 md:mt-5 mt-3 mb-5">
+          <p
+            className="__body20 md:mt-5 mt-3 mb-5"
+            data-aos="fade-up"
+            data-aos-delay={100}
+          >
             A cloud based platform with portal access for all users. The
             scalable, secure and easy to use platform drives productivity,
             reduces errors, streamlines workflow and enhances compliance. Proven
             for labs in clinical and cannabis. A high performance ERP for labs.
           </p>
-          <div className="__c_all gap-x-2">
+          <div
+            className="__c_all gap-x-2"
+            data-aos="fade-up"
+            data-aos-delay={150}
+          >
             <Link
-              href={"#"}
+              href={"https://www.relims.com/features"}
               className="__btn_outline text-[15px] font-bold w-[170px]"
             >
               Features
             </Link>
             <a
-              href={"#"}
+              href={"https://www.relims.com/#Solutions"}
               className="__btn_outline text-[15px] font-bold w-[170px]"
             >
               Solutions
             </a>
           </div>
-          <div className="max-w-[600px] mx-auto translate-y-12">
+          <div
+            className="max-w-[600px] mx-auto translate-y-12"
+            data-aos="fade-up"
+            data-aos-delay={200}
+          >
             <Image
               src={"/hero_img.png"}
               height={1560}

@@ -5,8 +5,10 @@ const OurSolutionSection = () => {
   return (
     <section className="mt-20 md:mt-[90px] lg:mt-[100px]">
       <div className="max-w-[1037px] mx-auto text-center">
-        <h2 className="__h2">Our Solutions</h2>
-        <h5 className="__h5 mt-3 max-w-[519px] mx-auto">
+        <h2 className="__h2" data-aos="fade-up">
+          Our Solutions
+        </h2>
+        <h5 className="__h5 mt-3 max-w-[519px] mx-auto" data-aos="fade-up">
           {"Customized LIMS software for specific industries and verticals"}
         </h5>
       </div>
@@ -15,6 +17,8 @@ const OurSolutionSection = () => {
         <div className="flex flex-wrap justify-center gap-[57px]">
           {ourSolurionCards.map(({ description, iconSrc, title, url }, i) => (
             <div
+              data-aos="fade-up"
+              data-aos-delay={i * 50}
               key={i}
               className="lg:w-[30%] max-w-[400px] flex flex-col justify-center items-center text-center"
             >
