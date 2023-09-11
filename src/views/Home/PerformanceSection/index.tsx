@@ -7,11 +7,8 @@ const PerformanceSection = () => {
   return (
     <section className="mt-10 md:mt-[70px] lg:mt-[90px] __gradient py-10 md:py-[60px]">
       <div className="max-w-[calc(1367px+30px)] px-[30px] mx-auto text-center">
-        <h2 className="__h2" data-aos="fade-up">
-          {" "}
-          Everything your lab needs in one place
-        </h2>
-        <p className="__h5 max-w-[852px] mx-auto mt-5" data-aos="fade-up">
+        <h2 className="__h2"> Everything your lab needs in one place</h2>
+        <p className="__h5 max-w-[852px] mx-auto mt-5">
           Optimized to drive revenue, patient satisfaction and business
           performance
         </p>
@@ -23,10 +20,7 @@ const PerformanceSection = () => {
           src={"/performance_mobile.png"}
           className="mt-5 md:hidden"
         />
-        <div
-          className="max-md:flex justify-center mt-12 md:mt-24"
-          data-aos="fade-up"
-        >
+        <div className="max-md:flex justify-center mt-12 md:mt-24">
           <div className="max-w-[1010px] mx-auto grid grid-cols-2 max-md:gap-x-[14px] lg:gap-y-10 relative">
             {performances.map(({ icon, lists, title }, i) => (
               <div
@@ -36,7 +30,8 @@ const PerformanceSection = () => {
                   i === 0 && "md:translate-x-16",
                   i === 6 && "md:translate-x-16",
                   i === 1 && "md:-translate-x-16",
-                  i === 7 && "md:-translate-x-16"
+                  i === 7 && "md:-translate-x-16",
+                  "max-md:h-[140px]"
                 )}
               >
                 <div
@@ -45,7 +40,7 @@ const PerformanceSection = () => {
                     i % 2 ? "md:items-start" : "md:items-end"
                   )}
                 >
-                  <Image {...icon} alt="Icon" />
+                  <Image {...icon} alt="Icon" className="max-md:h-10" />
                   <h6 className="font-medium text-xl/[22px] mt-1.5 capitalize mb-1">
                     {title}
                   </h6>

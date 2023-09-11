@@ -8,18 +8,14 @@ const BetterResultSection = () => {
   return (
     <section className="mt-[100px] lg:mt-[120px]">
       <div className="mx-auto text-center">
-        <h2 className="__h2" data-aos="fade-up">
-          Better results
-        </h2>
-        <p className="__h5 mt-3" data-aos="fade-up">
-          From automation to profitability
-        </p>
+        <h2 className="__h2">Better results</h2>
+        <p className="__h5 mt-3">From automation to profitability</p>
       </div>
       <div className="max-w-[calc(768px+30px)] px-[30px] mx-auto mt-10">
         <div className="__c_all max-md:flex-col gap-y-5 gap-x-5">
           {betterResult.tabs.map((label, i) => {
             return (
-              <div data-aos="fade-up" key={i}>
+              <div key={i}>
                 <button
                   onClick={() => setActiveTab(i)}
                   className={cxm(
@@ -34,13 +30,10 @@ const BetterResultSection = () => {
           })}
         </div>
         <div className="text-center mt-9 lg:mt-14">
-          <h2
-            data-aos="fade-up"
-            className="text-[20px]/[25px] lg:text-[32px]/[35px] font-semibold"
-          >
+          <h2 className="text-[20px]/[25px] lg:text-[32px]/[35px] font-semibold">
             {betterResult.fields[activeTab].title}
           </h2>
-          <p data-aos="fade-up" className="mt-5 __body20">
+          <p className="mt-5 __body20">
             {betterResult.fields[activeTab].description}
           </p>
         </div>

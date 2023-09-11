@@ -31,11 +31,7 @@ const HeroSection = () => {
             reduces errors, streamlines workflow and enhances compliance. Proven
             for labs in clinical and cannabis. A high performance ERP for labs.
           </p>
-          <div
-            className="__c_all gap-x-2"
-            data-aos="fade-up"
-            data-aos-delay={150}
-          >
+          <div className="__c_all gap-x-2">
             <Link
               href={"https://www.relims.com/features"}
               className="__btn_outline text-[15px] font-bold w-[170px]"
@@ -49,11 +45,7 @@ const HeroSection = () => {
               Solutions
             </a>
           </div>
-          <div
-            className="max-w-[600px] mx-auto translate-y-12"
-            data-aos="fade-up"
-            data-aos-delay={200}
-          >
+          <div className="max-w-[600px] mx-auto translate-y-16">
             <Image
               src={"/hero_img.png"}
               height={1560}

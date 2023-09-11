@@ -14,7 +14,6 @@ const Header = () => {
   return (
     <>
       <header
-        data-aos="fade-down"
         className={cxm(
           "fixed top-0 left-0 w-full duration-300 z-[99] bg-[#D7F7FF]",
           scroll.y > 0 && "bg-white"
@@ -37,7 +36,9 @@ const Header = () => {
                 onClick={() => setIsActiveNavMenu((p) => !p)}
                 className={cxm(
                   "text-3xl h-10 aspect-square duration-200 __c_all rounded",
-                  isActiveNavMenu && "bg-accent text-white"
+                  isActiveNavMenu
+                    ? "bg-accent text-white"
+                    : "border border-[#f3f5fb]"
                 )}
               >
                 <IoMenuSharp />

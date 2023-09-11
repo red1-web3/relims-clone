@@ -2,13 +2,8 @@ const TestimonialSection = () => {
   return (
     <section className="mt-10 md:mt-[70px] lg:mt-[100px]">
       <div className="max-w-[690px] mx-auto text-center">
-        <h2 className="__h2" data-aos="fade-up">
-          What Our Customers Say
-        </h2>
-        <div
-          data-aos="fade-up"
-          className="mt-10 max-md:mx-5 md:w-[700px] max-md:px-[15px] h-[400px] __c_all text-start bg-[url('/testimonial_bg.png')] bg-cover bg-no-repeat bg-center"
-        >
+        <h2 className="__h2">What Our Customers Say</h2>
+        <div className="mt-10 max-md:mx-5 md:w-[700px] max-md:px-[15px] h-[400px] __c_all text-start bg-[url('/testimonial_bg.png')] bg-cover bg-no-repeat bg-center">
           <div className="flex items-center gap-x-5 max-w-[500px]">
             <div>
               <h4 className="text-xl/[30px] font-bold">VP of Operations,</h4>
