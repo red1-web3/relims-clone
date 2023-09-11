@@ -30,13 +30,12 @@ const PerformanceSection = () => {
                   i === 0 && "md:translate-x-16",
                   i === 6 && "md:translate-x-16",
                   i === 1 && "md:-translate-x-16",
-                  i === 7 && "md:-translate-x-16",
-                  "max-md:h-[140px]"
+                  i === 7 && "md:-translate-x-16"
                 )}
               >
                 <div
                   className={cxm(
-                    "w-[160px] md:max-w-[137px] flex flex-col max-md:items-center max-lg:scale-75",
+                    "w-[160px] md:max-w-[137px] flex flex-col max-md:items-center max-lg:scale-90",
                     i % 2 ? "md:items-start" : "md:items-end"
                   )}
                 >

@@ -17,7 +17,6 @@ const TrackRecordSection = () => {
 
   useClickAway(collapsibleTarget, () => {
     setActiveFaq(null);
-    setActiveImage(0);
   });
   return (
     <section className="mt-16 md:mt-[80px] lg:mt-[90px]">
@@ -30,9 +29,9 @@ const TrackRecordSection = () => {
           Easy, mobile-optimized, web-based interface accessible from anywhere
         </p>
       </div>
-      <div className="mt-10 md:mt-20 max-w-[calc(1095px+30px)] mx-auto grid gap-y-7 lg:grid-cols-3 gap-x-10 px-[30px]">
+      <div className="mt-10 md:mt-20 max-w-[calc(1095px+30px)] mx-auto lg:grid gap-y-7 lg:grid-cols-3 gap-x-10 px-[30px]">
         <div
-          className="space-y-5 md:space-y-10 max-lg:order-2"
+          className="space-y-16 md:space-y-10 max-lg:order-2"
           ref={collapsibleTarget}
         >
           {trackRecord.collapsible.map((data, i) => (
@@ -41,6 +40,7 @@ const TrackRecordSection = () => {
               {...data}
               onClick={() => handleClick(i)}
               isOpen={activeFaq === i}
+              imgSrc={trackRecord.tracks[activeImage]}
             />
           ))}
         </div>
@@ -49,7 +49,7 @@ const TrackRecordSection = () => {
           <img
             src={trackRecord.tracks[activeImage]}
             alt="Image"
-            className="max-h-[450px] h-fit"
+            className="max-h-[450px] h-fit max-lg:hidden"
           />
         </div>
       </div>
@@ -64,11 +64,13 @@ function CollapsibleColumn({
   title,
   onClick,
   isOpen,
+  imgSrc,
 }: {
   title: string;
   description: string;
   onClick: () => void;
   isOpen: boolean;
+  imgSrc: string;
 }) {
   return (
     <div className={cxm("group relative isolate")}>
@@ -86,9 +88,16 @@ function CollapsibleColumn({
         transitionTime={500}
         transitionCloseTime={500}
       >
-        <p className="p-5 md:p-[30px] rounded-lg md:rounded-3xl __gradient mt-3.5 __body20 font-normal">
+        <div className="p-6 md:p-[30px] rounded-2xl md:rounded-3xl __gradient mt-3.5 __body20 font-normal">
+          <div className="flex justify-center">
+            <img
+              src={imgSrc}
+              alt="Image"
+              className="max-h-[250px] h-fit my-14 md:hidden"
+            />
+          </div>
           {description}
-        </p>
+        </div>
       </Collapsible>
     </div>
   );
